@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshit Tiwari</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <!-- Floating Particles Background -->
+  <div class="particles-container" id="particles"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon"></div>
+        <span>Harshit Tiwari</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="floating-elements">
+      <div class="floating-moon"></div>
+      <div class="floating-sun"></div>
+      <div class="floating-cloud cloud-1"></div>
+      <div class="floating-cloud cloud-2"></div>
+      <div class="floating-stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="avatar-container">
+        <div class="avatar">
+          <div class="avatar-face"></div>
+          <div class="avatar-glow"></div>
+        </div>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Hello, I'm</span>
+        <span class="title-name typing-animation">Harshit Tiwari</span>
+      </h1>
+      <p class="hero-subtitle fade-in-text">Creative java & python developer</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+        <button class="btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="title-decoration"></div>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text slide-in">
+          <p>I'm a passionate creative developer with a love for crafting beautiful, interactive experiences. My journey in design and development has been driven by curiosity and a desire to create meaningful digital solutions.</p>
+          <p>When I'm not coding, you can find me exploring new design trends, sketching ideas, or enjoying a peaceful sunset.</p>
+          
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" data-target="50">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="25">0</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-visual slide-in">
+          <div class="profile-card">
+            <div class="profile-image"></div>
+            <div class="profile-decoration"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">My Projects</h2>
+        <div class="title-decoration"></div>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card slide-in" onclick="openProjectModal('project1')">
+          <div class="project-image project-1"></div>
+          <div class="project-content">
+            <h3>Dreamy Mobile App</h3>
+            <p>A beautiful sleep tracking app with 3D animations</p>
+            <div class="project-tags">
+              <span class="tag">UI/UX</span>
+              <span class="tag">Mobile</span>
+              <span class="tag">3D</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <button class="btn-view">View Project</button>
+          </div>
+        </div>
+        
+        <div class="project-card slide-in" onclick="openProjectModal('project2')">
+          <div class="project-image project-2"></div>
+          <div class="project-content">
+            <h3>Gradient Dashboard</h3>
+            <p>Modern analytics dashboard with smooth animations</p>
+            <div class="project-tags">
+              <span class="tag">Web</span>
+              <span class="tag">Dashboard</span>
+              <span class="tag">React</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <button class="btn-view">View Project</button>
+          </div>
+        </div>
+        
+        <div class="project-card slide-in" onclick="openProjectModal('project3')">
+          <div class="project-image project-3"></div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>Creative portfolio with interactive 3D elements</p>
+            <div class="project-tags">
+              <span class="tag">Portfolio</span>
+              <span class="tag">3D</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <button class="btn-view">View Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="title-decoration"></div>
+      </div>
+      
+      <div class="skills-content">
+        <div class="skills-grid">
+          <div class="skill-category slide-in">
+            <h3>Frontend Development</h3>
+            <div class="skill-item">
+              <span class="skill-name">React</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS/SCSS</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95"></div>
+              </div>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+          
+          <div class="skill-category slide-in">
+            <h3>Design</h3>
+            <div class="skill-item">
+              <span class="skill-name">UI/UX Design</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="92"></div>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Figma</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="88"></div>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Adobe Creative</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievement-cards">
+          <div class="achievement-card slide-in">
+            <div class="achievement-icon">🏆</div>
+            <h4>Best Design Award</h4>
+            <p>2023 Creative Excellence</p>
+          </div>
+          <div class="achievement-card slide-in">
+            <div class="achievement-icon">⭐</div>
+            <h4>5-Star Rating</h4>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="achievement-card slide-in">
+            <div class="achievement-icon">🚀</div>
+            <h4>Fast Delivery</h4>
+            <p>Always On Time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="title-decoration"></div>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info slide-in">
+          <h3>Let's Create Something Amazing</h3>
+          <p>I'm always excited to work on new projects and collaborate with creative minds. Drop me a message!</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <p>ht157345@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 967069****</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Location</h4>
+                <p>Lucknow , Uttar Pradesh , INDIA 🇮🇳</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form slide-in">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required>
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            
+            <div class="file-upload-container">
+              <div class="file-upload" id="fileUpload">
+                <div class="upload-icon">📎</div>
+                <div class="upload-text">
+                  <span class="upload-title">Attach Files</span>
+                  <span class="upload-subtitle">Drag & drop or click to browse</span>
+                </div>
+                <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.jpg,.png">
+              </div>
+              <div class="uploaded-files" id="uploadedFiles"></div>
+            </div>
+            
+            <button type="submit" class="btn-submit">
+              <span>Send Message</span>
+              <div class="btn-loading"></div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Harshit Tiwari. Made with 💜 and lots of coffee.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">GitHub</a>
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Dribbble</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeProjectModal()">&times;</span>
+      <div id="modalBody">
+        <!-- Modal content will be inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
